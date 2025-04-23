@@ -1,92 +1,267 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Colegio CASD</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ave María en Colombia: La Región Cundiboyacense</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #fefefe;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(45deg, #FF6F61, #FFA17A);
+      padding: 50px 20px;
+      text-align: center;
+      color: white;
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+
+    nav {
+      background-color: #FFD6A5;
+      padding: 15px 0;
+      text-align: center;
+    }
+
+    nav a {
+      color: #333;
+      text-decoration: none;
+      padding: 12px 20px;
+      margin: 0 10px;
+      border-radius: 30px;
+      font-weight: 600;
+      transition: background-color 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #FF6F61;
+      color: white;
+    }
+
+    section {
+      padding: 50px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    section h2 {
+      font-size: 2.2em;
+      color: #FF6F61;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .content {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
+
+    .card {
+      background-color: #fff;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      width: 320px;
+      padding: 30px;
+      text-align: left;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    .card h3 {
+      font-size: 1.5em;
+      color: #FF6F61;
+      margin-bottom: 15px;
+    }
+
+    .card p, .card ul {
+      font-size: 1em;
+      line-height: 1.6;
+      color: #555;
+    }
+
+    .card ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .card ul li {
+      margin-bottom: 10px;
+    }
+
+    .banner {
+      background-color: #FFEB99;
+      padding: 20px;
+      margin: 40px auto;
+      text-align: center;
+      font-size: 1.3em;
+      font-weight: 600;
+      border-radius: 10px;
+      max-width: 800px;
+      color: #333;
+    }
+
+    .button {
+      display: inline-block;
+      background-color: #FFA17A;
+      color: white;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 30px;
+      font-size: 1.1em;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+      margin-top: 20px;
+      transition: background-color 0.3s;
+    }
+
+    .button:hover {
+      background-color: #FF6F61;
+    }
+
+    #kahootSection {
+      background-color: #E0F7FA;
+      padding: 50px 20px;
+      text-align: center;
+      border-radius: 10px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    footer {
+      background-color: #FF6F61;
+      color: white;
+      padding: 25px;
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
+      .card {
+        width: 90%;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 10px 5px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="/img/logo.png" alt="Logo del Colegio CASD">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#eventos">Eventos</a></li>
-                <li><a href="#media-tecnica">Media Técnica</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <section id="inicio">
-        <div class="banner">
-            <img src="/img/IMG_1101.JPG" alt="Banner del Colegio CASD">
-            <div class="banner-text">
-                <h1>Bienvenidos al Colegio CASD</h1>
-                <p>Educación de calidad para un futuro brillante</p>
-            </div>
-        </div>
-        <div class="introduccion">
-            <p>El Colegio CASD se dedica a proporcionar una educación integral y de calidad a sus estudiantes. Nuestra misión es formar individuos responsables, críticos y comprometidos con su entorno.</p>
-        </div>
-    </section>
+  <header>
+    <h1>La Expresión "Ave María" en Colombia</h1>
+    <p>Explorando su origen y significado en la región Cundiboyacense</p>
+  </header>
 
-    <section id="eventos">
-        <h2>Eventos</h2>
-        <div class="evento-destacado">
-            <h3>Votación de Personero</h3>
-            <img src="/img/sierra.jpg" alt="Votación de Personero">
-            <h3>Vota #01!</h3>
-            <h4>Empezamos a cumplir sin tener el cargo</h4>
-            <h5>Nuestras Propuestas</h5>
-            <li> Hacer cumplimiento del manual de convivencia, defender los derechos de los
-                estudiantes, tratar de ser un portavoz para todos los estudiantes y comunicar cualquier 
-               problema o situación a las directivas.</li>
-               <br>
-            <li>Hacer jornadas de aseo para las zonas verdes y zonas deportivas como las canchas 
-                de volleyball y fútbol, para mantener una buena imagen de la institución.</li>
-                <br>
-            <li>Hacer uso de los espacios del colegio que no son utilizados frecuentemente como el vive 
-                digital, la sala de sistemas, la maloca y el conuco para hacer las clases más dinámicas.</li>
-            <h5>Y Mucho más!</h5>
-        </div>
-    </section>
+  <nav>
+    <a href="#origen">Origen</a>
+    <a href="#significados">Significados</a>
+    <a href="#frases">Frases Populares</a>
+    <a href="#kahoot">Kahoot</a>
+  </nav>
 
-    <section id="media-tecnica">
-        <h2>Media Técnica</h2>
-        <div class="programas">
-            <div class="programa">
-                <img src="/img/DSC_0976.JPG" alt="Alimentos">
-                <h3>Alimentos</h3>
-                <p>Formación en la preparación y manejo de alimentos.</p>
-            </div>
-            <div class="programa">
-                <img src="/img/DSC_0958.JPG" alt="Turismo">
-                <h3>Turismo</h3>
-                <p>Especialización en servicios turísticos y gestión hotelera.</p>
-            </div>
-            <div class="programa">
-                <img src="/img/DSC_0623.JPG" alt="Sistemas">
-                <h3>Sistemas</h3>
-                <p>Desarrollo de habilidades en informática y sistemas.</p>
-            </div>
-            <div class="programa">
-                <img src="/img/IMG_1151.JPG" alt="Contabilidad">
-                <h3>Contabilidad</h3>
-                <p>Conocimientos en contabilidad y finanzas.</p>
-            </div>
-            <div class="programa">
-                <img src="/img/IMG_1109.JPG" alt="Administración de Empresas">
-                <h3>Administración de Empresas</h3>
-                <p>Gestión y administración empresarial.</p>
-            </div>
-        </div>
-    </section>
+  <section id="video">
+    <h2 style="text-align: center; color: #FF6F61;">Entrevista a habitante de la región Cundiboyacense</h2>
+    <div style="text-align: center;">
+      <video width="80%" controls style="border-radius: 10px;">
+        <source src="img/ave.mp4" type="video/mp4">
+      </video>
+    </div>
+  </section>
+  
 
-    <footer>
-        <p>&copy; 2025 Colegio CASD. Todos los derechos reservados.</p>
-    </footer>
+  <section id="origen">
+    <h2>¿De Dónde Proviene "Ave María"?</h2>
+    <div class="content">
+      <div class="card">
+        <h3>El Origen en Cundinamarca y Boyacá</h3>
+        <p>La expresión "Ave María" tiene raíces profundas en la región Cundiboyacense (Cundinamarca y Boyacá), reconocida por su identidad campesina, en la que las invocaciones religiosas y expresiones naturales son parte del lenguaje diario.</p>
+        <p>Esta frase proviene de la oración católica y fue adaptada por el pueblo como una forma de expresar emociones en situaciones cotidianas.</p>
+        <img src="img/1img.jpg" alt="Origen campesino o religioso" width="100%">
+      </div>
+    </div>
+  </section>
+
+  <div class="banner">
+    ¿Sabías que en esta región, "Ave María" también se usa para elogiar paisajes hermosos?
+  </div>
+
+  <section id="significados">
+    <h2>Significados de "Ave María"</h2>
+    <div class="content">
+      <div class="card">
+        <h3>Usos Populares</h3>
+        <ul>
+          <li><strong>Sorpresa:</strong> “¡Ave María, qué bonito está eso!”</li>
+          <li><strong>Frustración:</strong> “Ave María, qué mal nos va hoy…”</li>
+          <li><strong>Admiración:</strong> “Ave María, esa comida está deliciosa.”</li>
+          <li><strong>Asombro:</strong> “Ave María, no me lo puedo creer.”</li>
+        </ul>
+        <img src="img/2img.jpg" alt="Expresión emocional (sorpresa, admiración...)" width="100%">
+      </div>
+    </div>
+  </section>
+
+  <div class="banner">
+    ¡Y no olvides que esta región también es famosa por su arquitectura colonial y paisajes andinos!
+  </div>
+
+  <div style="text-align: center; margin-top: 20px;">
+    <img src="img/4img.jpg" alt="Paisaje andino o cultural" width="80%" style="border-radius: 10px;">
+  </div>
+
+  <section id="frases">
+    <h2>Frases Populares</h2>
+    <div class="content">
+      <div class="card">
+        <h3>Expresiones Cotidianas</h3>
+        <ul>
+          <li>“¡Ave María, qué hermosos son estos paisajes!”</li>
+          <li>“Ave María, qué susto me dio ese perro.”</li>
+          <li>“Ave María, ya está lloviendo otra vez…”</li>
+          <li>“Ave María, esa noticia me dejó sin palabras.”</li>
+        </ul>
+        <img src="img/3img.jpg" alt="Meme o frase popular" width="100%">
+      </div>
+    </div>
+  </section>
+
+  <section id="kahoot">
+    <h2>¡Pon a prueba lo que aprendiste!</h2>
+    <div id="kahootSection">
+      <p>Haz clic en el botón para abrir el Kahoot en una nueva ventana:</p>
+      <a class="button" href="https://kahoot.it/challenge/07689172?challenge-id=668bbf02-9f90-43c3-8f8d-43b14dab557c_1745315759400" target="_blank">
+        Jugar el Kahoot ahora
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <p>¡Gracias por explorar con nosotros el significado de "Ave María" en la región Cundiboyacense!
+      David Saavedra 11-6, Nicolas Serrano 11-6.
+    </p>
+  </footer>
+
 </body>
 </html>
